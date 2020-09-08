@@ -34,8 +34,8 @@ function disconnect() {
 
 function echo() {
     if (ws != null) {
-		const message = document.getElementById('message').value;
-		log(`Sent to server :: ${message}`);
+        const message = document.getElementById('message').value;
+        log(`Sent to server :: ${message}`);
         ws.send(message);
     } else {
         alert('connection not established, please connect.');
@@ -43,8 +43,8 @@ function echo() {
 }
 
 function log(message) {
-	const messageLogs = document.getElementById('logging');
-	const p = document.createElement('p');
-	p.appendChild(document.createTextNode(message));
+    const messageLogs = document.getElementById('logging');
+    const p = document.createElement('p');
+    p.appendChild(document.createTextNode(message));
     messageLogs.appendChild(p);
 }
