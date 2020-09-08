@@ -1,14 +1,13 @@
 
 build-mvc:
-	./gradlew clean build :starter-mvc
+	./gradlew clean :starter-mvc:build
 
 start-mvc: build-mvc
-	./gradlew bootrun :starter-mvc
+	./gradlew :starter-mvc:bootrun
 
 
+build-mvc:
+	./gradlew clean :starter-webflux:build
 
-build-webflux:
-	./gradlew clean build :starter-webflux
-
-start-webflux: build-webflux
-	./gradlew bootrun :starter-webflux
+start-mvc: build-mvc
+	./gradlew :starter-webflux:bootrun
