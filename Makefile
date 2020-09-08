@@ -6,8 +6,15 @@ start-mvc: build-mvc
 	./gradlew :starter-mvc:bootrun
 
 
-build-mvc:
+build-webflux:
 	./gradlew clean :starter-webflux:build
 
-start-mvc: build-mvc
+start-webflux: build-webflux
 	./gradlew :starter-webflux:bootrun
+
+
+build-electron:
+	bash -c 'cd ./starter-electron && yarn install'
+
+start-electron: build-electron
+	bash -c 'cd ./starter-electron && yarn start'
