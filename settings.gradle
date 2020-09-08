@@ -1,4 +1,4 @@
-rootProject.name = 'service-starters'
+rootProject.name = "service-starters"
 
-include 'boot-starter'
-include 'start-mvc'
+include "starter-mvc"
+include "starter-webflux"
