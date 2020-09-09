@@ -1,5 +1,5 @@
 let ws = null;
-const url = "ws://localhost:8080/echo";
+const echoApplicationUrl = "ws://localhost:8080/echo";
 
 function setConnected(connected) {
     document.getElementById('connect').disabled = connected;
@@ -8,7 +8,7 @@ function setConnected(connected) {
 }
 
 function connect() {
-    ws = new WebSocket(url);
+    ws = new WebSocket(echoApplicationUrl);
     ws.onopen = function () {
         setConnected(true);
         log('Info: Connection Established.');

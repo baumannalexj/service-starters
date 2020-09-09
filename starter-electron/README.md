@@ -1,3 +1,7 @@
-https://www.electronforge.io/templates/typescript-+-webpack-template
+# Environment:
+* `yarn global add electron`
+* `nvm install 12`
+
+# Start app
 
 `$ make start-electron`
